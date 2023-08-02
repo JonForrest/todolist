@@ -1,0 +1,101 @@
+/*||CSS Applied Directly to Element Tags */
+body{
+  background-color: #FFEADD;
+}
+
+ul{
+  padding-inline-start: 0%;
+  padding-inline-end: 0%;
+  margin-bottom: 0px;
+}
+
+li{
+  list-style: none;
+}
+
+div>p{
+  width:300px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+/*||Classes*/
+.navigation-buttons{
+  border: 2px dashed #FF6666;
+  color:#FF6666;
+}
+
+.date-box{
+  background-color: #FF6666;
+  text-align: center;
+   color: #FFEADD;
+  font-size: 15pt;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.list-group{
+  flex-basis: 400px;
+  flex-grow: 0;
+  flex-shrink:1;
+}
+.text-label{
+  margin-bottom: 0px;
+  font-size: 15pt;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #FFEADD;
+  display: inline;
+}
+.main-list-items{
+  background-color: #FCAEAE;
+  word-break: break-all;
+  hyphens: auto;
+}
+
+.new-todo-btn{
+  background-color: #FFEADD;
+  color: #FF8989;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+}
+.space-remover{
+  padding: 0px;
+  border: 0 none none;
+}
+.input-formater{
+  text-align: center;
+  border: none;
+  outline: none;
+  height: 50px;
+  width:250px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: #FCAEAE;
+  font-size: 15pt;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #FFEADD;
+}
+
+.footer-formatter{ /*centers footer*/
+  display: flex;
+  justify-content: center;
+}
+
+
+/*||Conditional CSS*/
+.strikethrough:checked + label{ /*Adds Strikethrough to list item when box is checked*/
+  text-decoration:line-through;
+  text-decoration-color: #FF6666;
+}
+input:checked{ /*Makes Checkbox change color when checked*/
+  accent-color: #FF6666;
+}
+input:focus{ /*Handles styling when adding to-do item text box is active*/
+  border-bottom:5px solid #FFEADD;
+  background-color: #FCAEAE;
+}
